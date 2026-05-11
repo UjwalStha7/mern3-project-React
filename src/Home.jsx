@@ -1,21 +1,22 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 function Home(){
     return(
         <>
             <nav>
-                <div class="logo">MySite</div>
+                <div className="logo">MySite</div>
 
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul className="nav-links">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
 
-            <section class="hero">
-                <div class="hero-content">
+            <section className="hero">
+                <div className="hero-content">
                     <h1>Home</h1>
 
                     <p>
