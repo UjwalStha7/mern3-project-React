@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const name = "Ujwal Shrestha"
   return (
-    <div>
-      <h1>Hello {name}</h1>
-      <h2>Happy Learning</h2>
-    </div>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<h1>Home</h1>} />
+        <Route path='/about' element={<h1>About</h1>} />
+        <Route path='/contact' element={<h1>Contact</h1>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
