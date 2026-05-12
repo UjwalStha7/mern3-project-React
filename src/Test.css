@@ -1,0 +1,15 @@
+.card-wrapper{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.button-wrapper{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
