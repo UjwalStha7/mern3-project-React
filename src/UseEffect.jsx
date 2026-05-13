@@ -1,4 +1,4 @@
-import { useEffectEvent } from "react";
+import { useEffect, useState } from "react";
 
 function UseEffect(){
     // useEffect(()=>{
@@ -22,7 +22,7 @@ function UseEffect(){
         //     //login jati ahile like state ma value xa tyo backend ma pathaidine code.
         //     console.log("Like sent and Use Effect 3 Called");
         // }, [like]);
-        useEffectEvent(()=>{
+        useEffect(()=>{
             console.log("Rokera dekhau");
         });
         return (
